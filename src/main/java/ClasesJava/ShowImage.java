@@ -1,7 +1,5 @@
 package ClasesJava;
 
-import java.util.Objects;
-
 public class ShowImage {
     private String introducedCode;
 
