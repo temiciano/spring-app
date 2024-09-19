@@ -20,7 +20,7 @@ public class CodeController {
     public String endpoint(@RequestParam(name = "code", required = true, defaultValue = "Nada")
                            String code, Model model) {
         model.addAttribute("code", code);
-        if ("hola".equalsIgnoreCase(code)) {
+        if ("stuxnet".equalsIgnoreCase(code)) {
             String imageUrl = getImageUrlBasedOnTime();
             model.addAttribute("imageUrl", imageUrl);
         } else {
@@ -31,13 +31,13 @@ public class CodeController {
 
     private String getImageUrlBasedOnTime() {
         LocalTime currentTime = timeService.getCurrentTimeFromInternet();
-        LocalTime startTime = LocalTime.of(4, 30);
-        LocalTime endTime = LocalTime.of(5, 0);
+        LocalTime startTime = LocalTime.of(23, 45);
+        LocalTime endTime = LocalTime.of(23, 47);
 
         if (currentTime.isAfter(startTime) && currentTime.isBefore(endTime)) {
-            return "https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/what_is_the_stuxnet_virus_academy_a1/Stuxnet-Virus-01.png?width=1320&name=Stuxnet-Virus-01.png";
+            return "https://imgur.com/a/ZVODwte";
         } else {
-            return "https://i0.wp.com/historiaencomentarios.com/wp-content/uploads/2024/02/Dios-Zeus.png?fit=2310%2C1576&ssl=1";
+            return "https://i.imgur.com/OsN2aRn.png";
         }
     }
 }

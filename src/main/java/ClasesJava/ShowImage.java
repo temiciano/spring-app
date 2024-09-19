@@ -13,10 +13,3 @@ public class ShowImage {
 
     }
 }
-
-        //if (Objects.equals(introducedCode, "12345")) {
-        //return "Mostrando imagen correcta";
-        //} else {
-        //return "Codigo incorrecto";
-        //}
-        //}

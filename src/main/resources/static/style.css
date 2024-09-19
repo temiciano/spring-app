@@ -32,13 +32,20 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    margin: 7%;
 }
 
 .bonzy-container, .zeus-container, .iloveyou-container {
     display: flex;
     justify-content: space-around;
     margin: 2%;
+}
+
+.bonzy-image, .zeus-image, .iloveyou-image {
+    flex: 0 0 auto;
+    max-width: 30%;
+    margin-left: 50px;
+    height: auto;
 }
 
 .bonzy-container {
@@ -66,12 +73,6 @@ body {
     line-height: 1.5;
 }
 
-.bonzy-image {
-    flex: 0 0 auto;
-    max-width: 100px;
-    margin-left: 10px;
-}
-
 .zeus-text {
     flex: 1;
     align-self: flex-end;
@@ -85,12 +86,6 @@ body {
     line-height: 1.5;
 }
 
-.zeus-image {
-    flex: 0 0 auto;
-    max-width: 100px;
-    margin-right: 100px;
-}
-
 .iloveyou-text {
     flex: 1;
     align-self: flex-end;
@@ -102,12 +97,6 @@ body {
     min-width: 200px;
     font-size: 20px;
     line-height: 1.5;
-}
-
-.iloveyou-image {
-    flex: 0 0 auto;
-    max-width: 100px;
-    margin-right: 100px;
 }
 
 .code {
