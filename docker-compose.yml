@@ -1,0 +1,7 @@
+services:
+  demo:
+    build: demo
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    restart: always
