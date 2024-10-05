@@ -1,14 +1,24 @@
 body {
-    background-color: #dfdfdf;
-    font-family: Arial, sans-serif;
-    color: #222222;
+    background-image: url('background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #EEEEEE;
 }
 
 .header {
     padding: 40px;
     text-align: center;
-    background: #1084d0;
-    color: white;
+    background: #222831;
+    color: #76ABAE;
     font-size: 30px;
 }
 
@@ -17,9 +27,9 @@ body {
     padding: 15px 30px;
     font-size: 20px;
     text-align: center;
-    background-color: #dfdfdf;
-    color: #222222;
-    border: 2px solid #888888;
+    background-color: #31363F;
+    color: #EEEEEE;
+    border: 2px solid #76ABAE;
     cursor: pointer;
     box-shadow: 2px 2px 5px #808080;
 }
@@ -28,101 +38,38 @@ body {
     box-shadow: inset 2px 2px 5px #888888;
     transform: translateY(2px);
 }
-  
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 7%;
-}
 
-.bonzy-container, .zeus-container, .iloveyou-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 2%;
-}
-
-.bonzy-image, .zeus-image, .iloveyou-image {
-    flex: 0 0 auto;
-    max-width: 30%;
-    margin-left: 50px;
-    height: auto;
-}
-
-.bonzy-container {
-    align-items: flex-start;
-}
-
-.zeus-container {
-    align-items: flex-end;
-}
-
-.iloveyou-container {
-    align-items: flex-start;
-}
-
-.bonzy-text {
-    flex: 1;
-    margin-right: 50px;
-    background-color: #f0f0f0; /* Color de fondo */
-    border: 5px solid #ccc; /* Borde */
-    padding: 20px; /* Espacio interno */
-    border-radius: 2px; /* Bordes redondeados */
-    max-width: 500px; /* Anchura máxima */
-    min-width: 200px; /* Anchura mínima */
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.zeus-text {
-    flex: 1;
-    align-self: flex-end;
-    background-color: #f0f0f0;
-    border: 5px solid #ccc;
-    padding: 20px;
-    border-radius: 2px;
-    max-width: 500px;
-    min-width: 200px;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.iloveyou-text {
-    flex: 1;
-    align-self: flex-end;
-    background-color: #f0f0f0;
-    border: 5px solid #ccc;
-    padding: 20px;
-    border-radius: 2px;
-    max-width: 500px;
-    min-width: 200px;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.code {
+.centered-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    padding: 40px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.code button {
-    padding: 15px 30px;
+.content {
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
     font-size: 20px;
-    text-align: center;
-    background-color: #dfdfdf;
-    color: #222222;
-    border: 2px solid #888888;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px #808080;
+    margin-top: 30%;
 }
 
-.code button:active {
-    box-shadow: inset 2px 2px 5px #888888;
-    transform: translateY(2px);
+.container {
+    margin-top: 20px;
 }
 
-.code input {
-    font-size: 20px;
-    text-align: center;
+.zeus-container, .iloveyou-container, .bonzy-container, .code {
+    background-color: #31363F;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #008c69;
+    color: #EEEEEE;
+    font-size: 18px;
+}
+
+.zeus-container h3, .iloveyou-container h3, .bonzy-container h3 {
+    color: #76ABAE;
 }
